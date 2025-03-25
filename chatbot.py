@@ -2,6 +2,9 @@ import streamlit as st
 from streamlit_chat import message
 import os
 import nltk
+
+nltk.download("punkt")
+nltk.download("stopwords")
 nltk_data_dir = "/mount/src/chatbot/nltk_data"
 nltk.data.path.append(nltk_data_dir)
 try:
