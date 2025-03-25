@@ -3,15 +3,8 @@ from streamlit_chat import message
 import os
 import nltk
 
-nltk.download("punkt")
-nltk.download("stopwords")
-nltk_data_dir = "/mount/src/chatbot/nltk_data"
-nltk.data.path.append(nltk_data_dir)
-try:
-    nltk.data.find("tokenizers/punkt")
-except LookupError:
-    nltk.download("punkt", download_dir=nltk_data_dir)
-
+nltk.download("punkt",download_dir="/workspaces/chatbot/nltk_data")
+nltk.download("stopwords",download_dir="/workspaces/chatbot/nltk_data")
 
 # === Import backend functions ===
 from main import (
