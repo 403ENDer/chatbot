@@ -7,7 +7,7 @@ nltk.data.path.append(nltk_data_dir)
 try:
     nltk.data.find("tokenizers/punkt")
 except LookupError:
-    nltk.download("punkt")
+    nltk.download("punkt", download_dir=nltk_data_dir)
 
 
 # === Import backend functions ===
