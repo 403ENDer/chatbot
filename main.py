@@ -16,7 +16,7 @@ import os
 import zipfile
 import shutil
 
-nltk_data_dir = os.path.join(os.path.dirname(__file__), "nltk_data")
+nltk_data_dir = "/mount/src/chatbot/nltk_data"
 nltk.data.path.append(nltk_data_dir)
 
 # Safe download function (if resource not found)
