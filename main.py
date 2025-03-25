@@ -19,8 +19,8 @@ import shutil
 nltk_data_dir = "/mount/src/chatbot/nltk_data"
 nltk.data.path.append(nltk_data_dir)
 
-nltk.download("punkt")
-nltk.download("stopwords")
+# nltk.download("punkt")
+# nltk.download("stopwords")
 
 # Safe download function (if resource not found)
 def safe_nltk_download(resource):
