@@ -5,13 +5,6 @@ import nltk
 
 nltk.download("punkt")
 nltk.download("stopwords")
-nltk_data_dir = "/mount/src/chatbot/nltk_data"
-nltk.data.path.append(nltk_data_dir)
-try:
-    nltk.data.find("tokenizers/punkt")
-except LookupError:
-    nltk.download("punkt", download_dir=nltk_data_dir)
-
 
 # === Import backend functions ===
 from main import (
