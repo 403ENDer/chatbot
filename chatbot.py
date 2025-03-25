@@ -3,8 +3,8 @@ from streamlit_chat import message
 import os
 import nltk
 
-nltk.download("punkt",download_dir="/home/vscode/nltk_data")
-nltk.download("stopwords",download_dir="/home/vscode/nltk_data")
+nltk.download("punkt",download_dir="/workspaces/chatbot/nltk_data")
+nltk.download("stopwords",download_dir="/workspaces/chatbot/nltk_data")
 
 # === Import backend functions ===
 from main import (
