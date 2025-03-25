@@ -4,6 +4,7 @@ pandas
 requests
 nltk
 spacy==3.7.2
+huggingface_hub==0.20.3
 en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
 opencv-python-headless==4.9.0.80
 easyocr==1.7.1
