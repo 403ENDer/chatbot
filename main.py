@@ -19,8 +19,8 @@ import shutil
 # nltk_data_dir = "/mount/src/chatbot/nltk_data"
 # nltk.data.path.append(nltk_data_dir)
 
-nltk.download("punkt",download_dir="/home/vscode/nltk_data")
-nltk.download("stopwords",download_dir="/home/vscode/nltk_data")
+nltk.download("punkt",download_dir="/workspaces/chatbot/nltk_data")
+nltk.download("stopwords",download_dir="/workspaces/chatbot/nltk_data")
 
 # Safe download function (if resource not found)
 # def safe_nltk_download(resource):
