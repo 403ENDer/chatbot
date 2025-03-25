@@ -16,22 +16,22 @@ import os
 import zipfile
 import shutil
 
-nltk_data_dir = "/mount/src/chatbot/nltk_data"
-nltk.data.path.append(nltk_data_dir)
+# nltk_data_dir = "/mount/src/chatbot/nltk_data"
+# nltk.data.path.append(nltk_data_dir)
 
-# nltk.download("punkt")
-# nltk.download("stopwords")
+nltk.download("punkt")
+nltk.download("stopwords")
 
 # Safe download function (if resource not found)
-def safe_nltk_download(resource):
-    try:
-        nltk.data.find(resource)
-    except (LookupError, zipfile.BadZipFile):
-        nltk.download(resource.split("/")[-1], download_dir=nltk_data_dir)
+# def safe_nltk_download(resource):
+#     try:
+#         nltk.data.find(resource)
+#     except (LookupError, zipfile.BadZipFile):
+#         nltk.download(resource.split("/")[-1], download_dir=nltk_data_dir)
 
-# Ensure these are downloaded
-safe_nltk_download("tokenizers/punkt")
-safe_nltk_download("corpora/stopwords")
+# # Ensure these are downloaded
+# safe_nltk_download("tokenizers/punkt")
+# safe_nltk_download("corpora/stopwords")
 
 
 spacy_model = spacy.load("en_core_web_sm")
